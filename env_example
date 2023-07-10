@@ -1,0 +1,3 @@
+# rename as .env
+MYSQL_DATABASE=mes
+MYSQL_ROOT_PASSWORD=123123
