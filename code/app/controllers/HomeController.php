@@ -130,7 +130,7 @@ class HomeController
     {   
         //подгружаем общий контроллер (to do: вынести его отдельно)
         self::controller();
-        include __DIR__. '/../views/messanger.php'; 
+        include __DIR__. '/../views/messenger.php'; 
     }
     //страница chat
     public function chat($chatId)
@@ -148,7 +148,7 @@ class HomeController
                 $startChat = true;    
             }
             //подгружаем вид
-            include __DIR__. '/../views/messanger.php'; 
+            include __DIR__. '/../views/messenger.php'; 
         // страница группового чата
         }else if (isset($_GET['group_chat'])){
             $chats = $this->chatsManager->getGroupChats($this->verifyUser['user_id']);
@@ -162,7 +162,7 @@ class HomeController
             }
             if ($found){
                 $startChat = true;
-                include __DIR__. '/../views/messanger.php'; 
+                include __DIR__. '/../views/messenger.php'; 
             }else {
                 header("Location: /");
             }

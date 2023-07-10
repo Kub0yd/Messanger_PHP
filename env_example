@@ -1,3 +1,0 @@
-# rename as .env
-MYSQL_DATABASE=messanger
-MYSQL_ROOT_PASSWORD=123456

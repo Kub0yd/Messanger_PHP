@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'host' => 'db_messanger',
-    // 'db' => 'messanger',
+    'host' => 'db_messenger',
+    'db' => 'mes',
     'user' => "root",
-    // 'password' => "123456",
+    'password' => "123123",
 ];

@@ -3,27 +3,27 @@ version: '3'
  
 # в этом блоке мы описываем контейнеры, которые будут запускаться
 services:
-  messanger:
+  messenger:
     # Если нет секции build, то система будет искать образ в репозиториях
     build:
       context: ./fpm
       dockerfile: Dockerfile
-    image: mymessanger/php  # имя будущего образа
-    container_name: messanger  # имя контейнера после запуска
+    image: mymessenger/php  # имя будущего образа
+    container_name: messenger  # имя контейнера после запуска
     volumes:
        - ./code:/data/mysite.local
        - ./php-ini/php.ini:/usr/local/etc/php/php.ini
     # мы можем создать для контейнеров внутреннюю сеть
     networks:
-      - messanger-network
+      - messenger-network
  
   #контейнер с Nginx
-  messanger_webserver:
+  messenger_webserver:
     build:
       context: ./nginx
       dockerfile: Dockerfile
-    image: mymessanger/nginx
-    container_name: messanger_webserver
+    image: mymessenger/nginx
+    container_name: messenger_webserver
     volumes:
        - ./code:/data/mysite.local
 
@@ -32,13 +32,13 @@ services:
       - "80:80"
       - "443:443"
     networks:
-      - messanger-network
+      - messenger-network
  
   # контейнер с MySQL
   # строим на базе стандартного образа
-  db_messanger:
+  db_messenger:
     image: mysql:5.7.22
-    container_name: db_messanger
+    container_name: db_messenger
     ports:
      - "3306:3306"
     environment:
@@ -48,11 +48,11 @@ services:
       - ./dbdata:/var/lib/mysql
       - ./mysql/etc/my.cnf:/etc/mysql/conf.d/mysql.cnf
     networks:
-      - messanger-network
+      - messenger-network
 
   # Добавляем ещё одну папку, которую подхватит php и подключит новые файлы, не затрагивая остальные настройки
 
 #Docker Networks
 networks:
-  messanger-network:
+  messenger-network:
     driver: bridge

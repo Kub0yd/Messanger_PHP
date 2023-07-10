@@ -85,7 +85,8 @@ class AuthController
                 // Если аккаунт успешно создан, высылаем письмо на почту и ставим статус подтверждения email
                 
                 User::sendMail($email);
-                echo "Вы успешно зарегистрировались!";
+                echo "<br>";
+                echo " Вы успешно зарегистрировались!";
                 // header('Location: /login');
                 // exit();
             } else {
