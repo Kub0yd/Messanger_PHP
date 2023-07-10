@@ -18,3 +18,5 @@
 
         php SocketServer.php start
 8. В браузере перейдите по адресу http://messanger.local
+
+Для рассылки писем используется собственный smtp серевер, вы можете указать данные своего почтового сервера в файле [smtp.php](./code/config/smtp.php)
