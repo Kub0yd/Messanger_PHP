@@ -72,7 +72,7 @@ class AuthController
             $name = $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $user = new User($name, $email, $password);
+            
             if(!preg_match("/^[a-zA-Z0-9]+$/",$name))
             {
                 $err[] = "Логин может состоять только из букв английского алфавита и цифр\n";
@@ -81,21 +81,17 @@ class AuthController
             {
                 $err[] = "Логин должен быть не меньше 3-х символов и не больше 30\n";
             } 
-            if ($user->save() and empty($err)) {
+            if (empty($err)) {
                 // Если аккаунт успешно создан, высылаем письмо на почту и ставим статус подтверждения email
-                
-                User::sendMail($email);
-                echo "<br>";
-                echo " Вы успешно зарегистрировались!";
-                // header('Location: /login');
-                // exit();
-            } else {
-                
+                $user = new User($name, $email, $password);
+                if ($user->save()){
+                    User::sendMail($email);
+                    echo "<br>";
+                    echo " Вы успешно зарегистрировались!";
+                }else {
                 $err[] = "пользователь существует";
-            }
-        } else {
-            // Если запрос не POST, просто отображаем страницу регистрации
-
+                }
+            } 
         }
         include __DIR__. '/../views/register.php';
     }
