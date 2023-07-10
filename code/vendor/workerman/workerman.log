@@ -1,0 +1,314 @@
+2023-06-29 09:19:42 pid:1 Error: Object of class Workerman\Connection\TcpConnection could not be converted to string in D:\Skillfactory\web\docker\Docker-PHP\code\public\SocketServer.php:21
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(2570): {closure}()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\public\SocketServer.php(85): Workerman\Worker::runAll()
+#6 {main}
+2023-06-30 14:01:41 pid:1 Error: Cannot use object of type stdClass as array in E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php:31
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(stdClass))
+#1 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(65): Workerman\Worker::runAll()
+#6 {main}
+2023-06-30 14:03:10 pid:1 Error: Cannot use object of type stdClass as array in E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php:31
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(stdClass))
+#1 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(65): Workerman\Worker::runAll()
+#6 {main}
+2023-06-30 14:03:26 pid:1 Error: Cannot use object of type stdClass as array in E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php:31
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(stdClass))
+#1 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(65): Workerman\Worker::runAll()
+#6 {main}
+2023-06-30 14:03:54 pid:1 Error: Cannot use object of type stdClass as array in E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php:31
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getSto...')
+#1 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(65): Workerman\Worker::runAll()
+#6 {main}
+2023-06-30 14:53:34 pid:1 Exception: You can't send(NULL) to client, you need to convert it to a string.  in E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Protocols\Websocket.php:243
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(329): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(34): Workerman\Connection\TcpConnection->send(NULL)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getSto...')
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 E:\SkillFactory\WEB\Docker Compose\code\public\SocketServer.php(66): Workerman\Worker::runAll()
+#8 {main}
+2023-06-30 17:24:37 pid:1 Error: Class 'App\Models\DBConn' not found in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:87
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(32): Helper->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(77): Workerman\Worker::runAll()
+#7 {main}
+2023-06-30 17:25:38 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+2023-06-30 17:26:09 pid:1 Error: Class 'App\Models\DBConn' not found in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:92
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#7 {main}
+2023-06-30 17:28:22 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+2023-06-30 17:50:49 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+2023-06-30 18:29:11 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\models\heandlers\heandler.php(18): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(92): App\Models\DBConn::connect()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#9 {main}
+2023-06-30 18:31:41 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'172.20.0.1' (using password: NO) in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+2023-06-30 18:32:30 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+2023-06-30 18:33:44 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+2023-06-30 18:34:07 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:93
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(93): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(82): Workerman\Worker::runAll()
+#8 {main}
+2023-07-01 16:43:13 pid:1 PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'172.20.0.1' (using password: NO) in D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php:100
+Stack trace:
+#0 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(100): PDO->__construct()
+#1 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(37): Helper->__construct()
+#2 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#5 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#6 D:\Skillfactory\web\docker\Docker-PHP\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 D:\Skillfactory\web\docker\Docker-PHP\code\app\SocketServer.php(88): Workerman\Worker::runAll()
+#8 {main}
+2023-07-03 16:43:17 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php on line 51"
+2023-07-07 15:58:08 pid:1 Error: Call to a member function FETCH() on boolean in E:\SkillFactory\WEB\Docker Compose\code\app\models\UserManager.php:130
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(136): App\Models\UserManager->GetUserById(NULL)
+#1 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(153): Helper->convertMessages(Array)
+#2 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(43): Helper->sendHistory('8', 7, Object(Workerman\Connection\TcpConnection))
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getSto...')
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#5 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(83): Workerman\Worker::runAll()
+#9 {main}
+2023-07-10 09:52:42 pid:1 Error: Call to undefined function sendHistory() in E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php:43
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getSto...')
+#1 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(104): Workerman\Worker::runAll()
+#6 {main}
+2023-07-10 15:47:49 pid:1 PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in E:\SkillFactory\WEB\Docker Compose\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\app\models\heandlers\heandler.php(18): PDO->__construct('mysql:host=db;d...', 'root', 'your_mysql_root...', Array)
+#1 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(139): App\Models\DBConn::connect()
+#2 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(31): Helper->__construct()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getGro...')
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#5 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(125): Workerman\Worker::runAll()
+#9 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in E:\SkillFactory\WEB\Docker Compose\code\app\models\heandlers\heandler.php:18
+Stack trace:
+#0 E:\SkillFactory\WEB\Docker Compose\code\app\models\heandlers\heandler.php(18): PDO->__construct('mysql:host=db;d...', 'root', 'your_mysql_root...', Array)
+#1 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(139): App\Models\DBConn::connect()
+#2 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(31): Helper->__construct()
+#3 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"type":"getGro...')
+#4 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#5 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1479): Workerman\Events\Select->loop()
+#6 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(1399): Workerman\Worker::forkWorkersForWindows()
+#7 E:\SkillFactory\WEB\Docker Compose\code\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\SkillFactory\WEB\Docker Compose\code\app\SocketServer.php(125): Workerman\Worker::runAll()
+#9 {main}

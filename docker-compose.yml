@@ -1,0 +1,58 @@
+# версия синтаксиса
+version: '3'
+ 
+# в этом блоке мы описываем контейнеры, которые будут запускаться
+services:
+  app:
+    # Если нет секции build, то система будет искать образ в репозиториях
+    build:
+      context: ./fpm
+      dockerfile: Dockerfile
+    image: myapp/php  # имя будущего образа
+    container_name: app  # имя контейнера после запуска
+    volumes:
+       - ./code:/data/mysite.local
+       - ./php-ini/php.ini:/usr/local/etc/php/php.ini
+    # мы можем создать для контейнеров внутреннюю сеть
+    networks:
+      - app-network
+ 
+  #контейнер с Nginx
+  webserver:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: myapp/nginx
+    container_name: webserver
+    volumes:
+       - ./code:/data/mysite.local
+
+    # проброс портов
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+ 
+  # контейнер с MySQL
+  # строим на базе стандартного образа
+  db:
+    image: mysql:5.7.22
+    container_name: db
+    ports:
+     - "3306:3306"
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./dbdata:/var/lib/mysql
+      - ./mysql/etc/my.cnf:/etc/mysql/conf.d/mysql.cnf
+    networks:
+      - app-network
+
+  # Добавляем ещё одну папку, которую подхватит php и подключит новые файлы, не затрагивая остальные настройки
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge

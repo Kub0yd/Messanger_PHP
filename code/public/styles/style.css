@@ -1,0 +1,23 @@
+/* .searchForm{
+    display: none;
+} */
+/* .highlight {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: green;
+    color: white;
+} */
+.list-group-item:hover, .list-group-item:focus{
+    outline: none;
+    box-shadow: 0 0 12px 3px rgb(59, 166, 210)
+}
+body {
+    background-color: black;
+}
+.mess-date{
+    font-size: 12px;
+    opacity: 0.8;
+}

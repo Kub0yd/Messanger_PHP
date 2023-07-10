@@ -1,0 +1,3 @@
+# rename as .env
+MYSQL_DATABASE=you_db_name
+MYSQL_ROOT_PASSWORD=your_root_password
