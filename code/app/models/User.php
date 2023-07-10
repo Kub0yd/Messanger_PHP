@@ -94,12 +94,12 @@ class User
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Подтверждение';
-            $body = '<p>Чтобы подтвердить Email, перейдите по <a href="http://application.local/verification?hash=' . $token . '">ссылке</a></p>';
+            $body = '<p>Чтобы подтвердить Email, перейдите по <a href="http://messanger.local/verification?hash=' . $token . '">ссылке</a></p>';
             $mail->Body    = $body;
             // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
         
             $mail->send();
-            echo 'Чтобы подтвердить почту - перейдите по ссылке в письме';
+            echo "Чтобы подтвердить почту - перейдите по ссылке в письме\n";
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }

@@ -145,6 +145,12 @@ class UserManager {
           $stmt->bindValue(':user_id', $userId, \PDO::PARAM_INT); 
           $stmt->execute();
      }
+     public function updateUsername($userId, $newUsername){
+          $stmt = $this->db->prepare("UPDATE users SET username = :newUsername WHERE user_id = :user_id");
+          $stmt->bindValue(':newUsername', $newUsername); 
+          $stmt->bindValue(':user_id', $userId, \PDO::PARAM_INT); 
+          $stmt->execute();
+     }
 }
 
 ?>

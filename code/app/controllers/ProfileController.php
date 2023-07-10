@@ -43,15 +43,16 @@ class ProfileController {
         if (isset($_POST['saveChanges'])){
             // echo $_POST['hideEmail'];
 
-
-
+            
+            
             if ($_POST["newUsername"]){
+
                 $checkUser = $this->userManager->findUserByLoginOREmail($_POST["newUsername"]);
 
                 If ($checkUser){
                     echo "<p class='alert-nick' hidden></p>";
                 }else {
-                    $this->userManager->updateHiddenEmail($this->verifyUser['user_id'], $_POST['hideEmail']);
+                    $this->userManager->updateUsername($this->verifyUser['user_id'], $_POST['newUsername']);
                     header("Location: /profile");
                 }
             }else {

@@ -22,7 +22,7 @@
                 <label class="custom-file-label" for="customFile" data-browse="Выбрать">Выберите файлы</label>
                 <small class="form-text text-muted">
                     Максимальный размер файла: 3 Мб.
-                    Допустимые форматы: .
+                    Допустимые форматы: jpeg, png, gif.
                 </small>
                 <p id="fileName"></p>
             </div>
