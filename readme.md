@@ -8,7 +8,7 @@
          git clone https://github.com/Kub0yd/Messenger_PHP.git
 3. Задайте логин и пароль от базы данных в файле [env_example](./env_example), переименуйте его в файл: .env
 4. Так же вбейте эти данные в файл [db_config.php](./code/config/db_config.php)
-5. Внесите запись в ваш файл host:
+5. Внесите запись в ваш файл hosts:
 
          127.0.0.1 messenger.local
 6. Выполните команду:
